@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1만 시간의 법칙</title>
+    <title>테스트-1만 시간의 법칙</title>
     <link rel="icon" href="/img/favicon.ico" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header class="content-header">
-      <h1 class="content-top">1만 시간의 법칙</h1>
-      <img class="img-clock" src="./img/clock.png" alt="" />
-      <img class="img-title" src="./img/title.png" alt="1만 시간의 법칙" />
+      <h1 class="content-top">
+        <img class="img-clock" src="./img/clock.png" alt="" />
+        <img class="img-title" src="./img/title.png" alt="1만 시간의 법칙" />
+      </h1>
     </header>
 
     <main class="content-main">
@@ -25,7 +27,7 @@
         최소한 1만 시간의 훈련이 필요하다는 법칙이다.
       </p>
 
-      <form>
+      <form class="content-form">
         <p class="txt-master">
           나는
           <label class="sr-only" for="master-form">전문가 분야 입력</label>
@@ -39,39 +41,51 @@
         </p>
         <p class="txt-time">
           그래서 앞으로 매일 하루에
-          <label class="sr-only" for="number-form">시간 입력</label>
-          <input
-            class="num-form"
-            type="number"
-            id="number-form"
-            placeholder="예&#41;5시간"
-          />
-          시간씩 훈련할 것이다.
+          <span class="break-mobile">
+            <label class="sr-only" for="number-form">시간 카운트</label>
+            <input
+              class="num-form"
+              type="number"
+              id="number-form"
+              placeholder="예&#41;5시간"
+            />
+            시간씩 훈련할 것이다.
+          </span>
         </p>
-        <button class="btn-submit">
-          나는 며칠 동안 훈련을 해야 1만 시간이 될까?
-        </button>
+        <div class="btn-submit-box">
+          <button class="btn-submit">
+            나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+          </button>
+        </div>
       </form>
 
       <section class="content-result">
         <h2 class="sr-only">입력 결과 확인하기</h2>
-        <p class="txt-master">
-          당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서
+        <p class="result-txtmaster">
+          당신은 <strong class="txt-strong">프로그래밍</strong> 전문가가 되기
+          위해서
         </p>
         <p class="txt-time">
           대략 <strong>5110</strong>일 이상 훈련하셔야 합니다! :&#41;
         </p>
-        <button class="btn-modal">훈련하러 가기 GO! GO!</button>
-        <button class="btn-share">공유하기</button>
+        <div class="btn-box">
+          <button class="btn-modal">훈련하러 가기 GO! GO!</button>
+          <button class="btn-share">공유하기</button>
+        </div>
       </section>
     </main>
 
-    <!-- <section class="modal">
-      <h2 class="txt-cheer">화이팅!!♥♥♥</h2>
-      <p class="txt-cheer-desc">당신의 꿈을 응원합니다!</p>
-      <img class="licat-img" src="./img/licat.png" alt="응원하는 라이캣" />
-      <button class="btn-submit">종료하고 진짜 훈련하러 가기 GO!GO!</button>
-    </section> -->
+    <section class="modal" style="display: none">
+      <div class="modal-wrap">
+        <h2 class="txt-cheer">화이팅!!<span class="mo-hidden">♥♥♥</span></h2>
+        <p class="txt-cheer-desc">당신의 꿈을 응원합니다!</p>
+        <img class="licat-img" src="./img/licat.png" alt="응원하는 라이캣" />
+        <button class="btn-gogo">
+          종료하고 진짜
+          <span class="break-mobile-btn">훈련하러 가기 GO!GO!</span>
+        </button>
+      </div>
+    </section>
 
     <footer class="content-footer">
       <img class="logo-footer" src="img/logo.png" alt="Weniv." />
