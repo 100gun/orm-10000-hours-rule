@@ -11,8 +11,8 @@
   </head>
   <body>
     <header class="content-header">
-      <h1 class="sr-only">1만 시간의 법칙</h1>
-      <img class="imgclock-clock" src="./img/clock.png" alt="" />
+      <h1 class="content-top">1만 시간의 법칙</h1>
+      <img class="img-clock" src="./img/clock.png" alt="" />
       <img class="img-title" src="./img/title.png" alt="1만 시간의 법칙" />
     </header>
 
@@ -27,12 +27,25 @@
 
       <form>
         <p class="txt-master">
-          나는 <input type="txt-form" placeholder="예&#41;프로그래밍" />
+          나는
+          <label class="sr-only" for="master-form">전문가 분야 입력</label>
+          <input
+            class="txt-form"
+            type="text"
+            id="master-form"
+            placeholder="예&#41;프로그래밍"
+          />
           전문가가 될 것이다.
         </p>
         <p class="txt-time">
           그래서 앞으로 매일 하루에
-          <input type="num-form" placeholder="예&#41;5시간" />
+          <label class="sr-only" for="number-form">시간 입력</label>
+          <input
+            class="num-form"
+            type="number"
+            id="number-form"
+            placeholder="예&#41;5시간"
+          />
           시간씩 훈련할 것이다.
         </p>
         <button class="btn-submit">
