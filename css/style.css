@@ -318,7 +318,7 @@ body {
 }
 
 /* 모바일용 */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 700px) {
   body {
     font-size: var(--mo-font-size);
   }
@@ -354,6 +354,7 @@ body {
   .img-quotes {
     position: absolute;
     width: 100%;
+    max-width: 394px;
     margin-top: 30px;
   }
 
