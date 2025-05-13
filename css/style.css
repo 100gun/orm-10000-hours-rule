@@ -264,9 +264,7 @@ body {
     background-image: url(../img/click.png);
   }
 
-  .btn-submit,
-  .btn-modal,
-  .btn-gogo {
+  .btn-primary {
     color: var(--point-txt-color);
     background-color: var(--point-color);
   }
