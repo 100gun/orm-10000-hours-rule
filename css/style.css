@@ -1,0 +1,67 @@
+/* 폰트 */
+
+@font-face {
+  font-family: "GmarketSans";
+  src: url("../font/GmarketSansTTFLight.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "GmarketSans";
+  src: url("../font/GmarketSansTTFMedium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "GmarketSans";
+  src: url("../font/GmarketSansTTFBold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "OTEnjoystoriesBA";
+  src: url("../font/tvN 즐거운이야기 Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("../font/NotoSansKR-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* 접근 가능하도록 숨김 처리 */
+
+.sr-only {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* root */
+
+:root {
+  /* color */
+  --main-color: #5b2386;
+  --point-color: #fcee21;
+
+  --main-txt-color: #fff;
+  --point-txt-color: #5b2386;
+
+  /* size */
+  --pc-title-size: 72px;
+  --pc-font-size: 24px;
+
+  --mo-title-size: 14px;
+  --mo-font-size: 14px;
+}
