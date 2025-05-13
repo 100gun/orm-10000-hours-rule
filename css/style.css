@@ -2,16 +2,9 @@
 
 @font-face {
   font-family: "GmarketSans";
-  src: url("../font/GmarketSansTTFLight.ttf");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "GmarketSans";
   src: url("../font/GmarketSansTTFMedium.ttf");
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @font-face {
@@ -58,10 +51,17 @@
   --main-txt-color: #fff;
   --point-txt-color: #5b2386;
 
-  /* size */
+  /* font */
   --pc-title-size: 72px;
   --pc-font-size: 24px;
 
   --mo-title-size: 14px;
   --mo-font-size: 14px;
+}
+
+body {
+  font-family: "GmarketSans", "NotoSansKR", sans-serif;
+  font-weight: 400;
+  background-color: var(--main-color);
+  text-align: center;
 }
