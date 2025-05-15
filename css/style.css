@@ -336,10 +336,23 @@ body {
   }
 }
 
+/* 줄바꿈 미디어쿼리 */
+@media (max-width: 800px) {
+  .break-pc {
+    display: block;
+    margin-top: 16px;
+  }
+}
+
 /* 모바일용 */
 @media screen and (max-width: 700px) {
   body {
     font-size: var(--mo-font-size);
+  }
+
+  .break-pc {
+    display: inline;
+    margin-top: 16px;
   }
 
   /* header 영역 */
