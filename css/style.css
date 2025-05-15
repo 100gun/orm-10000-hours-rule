@@ -138,6 +138,28 @@ body {
     line-height: 1.5;
   }
 
+  .txt-desc::after {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 32px;
+    top: 25px;
+    right: 0;
+
+    background-image: url("../img/quotes-right.png");
+  }
+
+  .txt-desc::before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 32px;
+    top: 25px;
+    left: 0;
+
+    background-image: url("../img/quotes-left.png");
+  }
+
   .txt-strong {
     font-size: 24px;
     font-weight: 700;
@@ -362,6 +384,30 @@ body {
     font-size: 14px;
     white-space: nowrap;
     margin: 0 35px 0;
+  }
+
+  .txt-desc::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 18px;
+    top: 18px;
+    left: -19px;
+
+    background-size: cover;
+    background-image: url("../img/quotes-left.png");
+  }
+
+  .txt-desc::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 18px;
+    top: 18px;
+    right: -19px;
+
+    background-size: cover;
+    background-image: url("../img/quotes-right.png");
   }
 
   .txt-strong {
