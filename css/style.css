@@ -78,6 +78,10 @@ button {
   cursor: pointer;
 }
 
+.modal {
+  display: none;
+}
+
 /* PC 화면 */
 
 @media screen {
