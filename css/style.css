@@ -72,6 +72,12 @@ body {
   background-color: var(--main-color);
 }
 
+/* PC, 모바일 공통 스타일  */
+
+button {
+  cursor: pointer;
+}
+
 /* PC 화면 */
 
 @media screen {
