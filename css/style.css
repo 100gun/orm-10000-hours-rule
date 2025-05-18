@@ -78,10 +78,6 @@ button {
   cursor: pointer;
 }
 
-.modal {
-  display: none;
-}
-
 /* PC 화면 */
 
 @media screen {
@@ -309,18 +305,20 @@ button {
 
   .modal {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 100;
 
     width: 800px;
-    height: auto;
     line-height: 1;
+
+    border-style: none;
     border-radius: 20px;
     background-color: #fff;
 
     box-shadow: 4px 4px 30px 0px #00000026;
+  }
+
+  .modal::backdrop {
+    background: rgba(0, 0, 0, 0.4); /* 다크 백드롭 */
   }
 
   .modal-wrap {
@@ -534,7 +532,6 @@ button {
 
   .modal {
     width: 330px;
-    height: 500px;
   }
 
   .modal-wrap {
